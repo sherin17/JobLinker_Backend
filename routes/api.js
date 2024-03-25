@@ -18,5 +18,8 @@ router.use('/verifiedjobs',verifiedJobs)
 router.use('/jobseekeruv',jobseekerUV)
 // router.use('/jobuv',jobuv)
 router.use('/applicationsuv',applicationsUV)
+const mail = require('./nodemailerApi')
+router.use('/nodemailer',mail)
+const { route } = require('./nodemailerApi')
 module.exports = router;
 
